@@ -1,3 +1,26 @@
-// Ejercicio While 3: Validador de Contraseña
-// Desarrolla un programa que use while para solicitar una contraseña hasta que cumpla con los criterios: 
-// mínimo 8 caracteres, al menos una mayúscula, una minúscula y un número.
+/*
+Implementa un sistema que use un ciclo while para solicitar una contraseña al usuario hasta que ingrese "admin123". 
+Debe mostrar cuántos intentos fallidos hubo antes del acceso correcto.
+*/
+
+let contrasenaCorrecta = "admin123";
+let contadorIntentos = 0;
+
+/*
+Usamos While (true) para que se ejecute siempre solo hasta que el break lo rompa
+*/
+
+while (true) {
+    let contrasenaIngresada = prompt("Ingrese la contraseña");
+    if (contrasenaIngresada === contrasenaCorrecta) {
+        alert("Los intentos fallidos fueron: " + contadorIntentos + " Antes de acceso correcto")
+        break
+    } else {
+        contadorIntentos++
+    }
+    
+}
+
+
+
+
