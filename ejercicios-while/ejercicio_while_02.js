@@ -15,5 +15,5 @@ while (contador <= 50) {
     contador++
 }
 
-console.log(sumarPares)
-console.log(contarPares)
+console.log("La suma de todos los pares es: " + sumarPares)
+console.log("Los pares contados fueron: " + contarPares)
